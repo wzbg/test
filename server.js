@@ -1,9 +1,9 @@
 'use strict';
 var AV = require('leanengine');
 
-var APP_ID = process.env.LC_APP_ID;
-var APP_KEY = process.env.LC_APP_KEY;
-var MASTER_KEY = process.env.LC_APP_MASTER_KEY;
+var APP_ID = process.env.LC_APP_ID || 'WWlg8uagf4k89UubCP7V1AOn';
+var APP_KEY = process.env.LC_APP_KEY || '5VlzSmoCVtU2WRRYfG7YyVao';
+var MASTER_KEY = process.env.LC_APP_MASTER_KEY || 'vOQh0j62QzG0IkF6QjVmM2Qq';
 
 AV.initialize(APP_ID, APP_KEY, MASTER_KEY);
 // 如果不希望使用 masterKey 权限，可以将下面一行删除
